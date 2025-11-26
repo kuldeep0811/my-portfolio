@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        nav {
+            background-color: #004d99;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+        }
+
+        nav h2 {
+            color: white;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 25px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            background: linear-gradient(to right, #0073e6, #00aaff);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 22px;
+        }
+
+        .about, .skills, .projects {
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .about h2, .skills h2, .projects h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .profile-pic {
+            text-align: center;
+        }
+
+        .profile-pic img {
+            border-radius: 50%;
+        }
+
+        .skill-container, .project-container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .skill-box, .project-box {
+            background-color: #e0e7ef;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            width: 150px;
+        }
+
+        .project-box a {
+            text-decoration: none;
+            color: #004d99;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #004d99;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer a {
+            color: yellow;
+            text-decoration: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2>My Portfolio</h2>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Hello, I'm Kuldeep Singh</h1>
+        <p>Developer | Designer | Educator</p>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <h2>About Me</h2>
+
+        <div class="profile-pic">
+            <img src="kuldeep.png.jpeg" alt="Kuldeep Singh" width="200" height="200">
+            <p>
+                I am Kuldeep Singh, a passionate web developer with expertise in creating dynamic and 
+                responsive websites. I love coding and designing user-friendly interfaces.
+            </p>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills" id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skill-container">
+            <div class="skill-box">HTML5</div>
+            <div class="skill-box">CSS3</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">React</div>
+            <div class="skill-box">Python</div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+
+        <div class="project-container">
+            <div class="project-box">
+                <h3>Project 1</h3>
+                <p>A calculator application.</p>
+                <a href="calculator.html" target="_blank">View Project</a>
+            </div>
+
+            <div class="project-box">
+                <h3>Project 2</h3>
+                <p>Stone Paper Scissors Game.</p>
+                <a href="stone_paper_scissors.py" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <p>Connect with me on 
+            <a href="https://www.linkedin.com/in/kuldeep-singh-ba6643379" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/kuldeep0811" target="_blank">GitHub</a>
+        </p>
+        <p>&copy; 2025 Kuldeep Singh</p>
+    </footer>
+
+</body>
+</html>
